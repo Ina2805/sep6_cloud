@@ -48,4 +48,4 @@ jobs:
         app-name: 'moviessep6'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_57f770a43cfc44539afbe42d17b13993 }}
-        images: 'moviessep6.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_15f23bef57ff4f0bb193c554930a058f }}/ready:${{ github.sha }}'
+        images: 'moviessep6.azurecr.io/moviessep6/ready:${{ github.sha }}'
