@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v1
       with:
         registry: https://moviessep6.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_15f23bef57ff4f0bb193c554930a058f }}
+        username: moviessep6
         password: ${{ secrets.AzureAppService_ContainerPassword_93314d0af1f1491eaa6f485b078dd12f }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: moviessep6.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_15f23bef57ff4f0bb193c554930a058f }}/ready:${{ github.sha }}
+        tags: moviessep6.azurecr.io/moviessep6/ready:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
