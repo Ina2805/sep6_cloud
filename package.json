@@ -2,7 +2,6 @@
   "name": "azure",
   "version": "1.0.0",
   "description": "",
-  "main": "src/App.js",
   "author": "",
   "license": "ISC",
   "private": true,
