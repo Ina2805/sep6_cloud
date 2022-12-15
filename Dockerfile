@@ -1,6 +1,6 @@
 FROM node:14
 WORKDIR /usr/src/app
-COPY package*.json app.js ./
+COPY package*.json App.js ./
 RUN npm i
 EXPOSE 80
-CMD ["node", "app.js"] 
+CMD ["node", "App.js"] 
