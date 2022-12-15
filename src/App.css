@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap");
+
+body{
+    font-family: "Souce Sans Pro",sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    background: rgb(146, 150, 152);
+     background-image: url("./assets/bg1.webp"); 
+     background-repeat: no-repeat;
+     background-size: cover;
+
+}
+
