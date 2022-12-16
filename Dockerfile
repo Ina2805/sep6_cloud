@@ -1,5 +1,10 @@
 FROM node:14
-WORKDIR /usr/src/app
+
+WORKDIR /app
+
 COPY package*.json .
-RUN npm i
+RUN npm install
+COPY . .
+RUN npm run build
+
 EXPOSE 80
